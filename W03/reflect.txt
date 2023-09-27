@@ -1,0 +1,40 @@
+1. For determining customer chooses based on the number of servings and coffee bag weights, we typically use relational and logical expressions to make choicies. 
+
+   A) Relational expressions: Relational expressions are used to compare values and check conditions. In this case, you might use relational expressions to compare the number of servings   	to the available coffee bag weights. For example:
+      	- 'servings > bagWeight': it checks if the servings are greater than the bag weight.
+      	- 'servings == bagWeight': it checks if the servings are equal to the bag weight.
+
+   B) Logical expressions: Logical expressions combine multiple relational expressions to make decisions. You can use logical operators like `&&` (logical AND) and `||` (logical OR) to     	create complex conditions. 
+      For example:
+      - '(servings > bagWeight) && (creamPreference == 'Y')': This checks if servings are greater than bag weight and if the customer prefers cream.
+
+2. To code the logic using and not using DeMorgan's Law:
+   Using DeMorgan's Law:
+  In my code i have used de morgan's law.
+  By using de morgan's law = (p3product_id != p1product_id && p3product_id != p2product_id) 
+  Without using de morgan's law =  (p3product_id != p1product_id) && (p3product_id != p2product_id);
+
+  The difference is in how we use the negation (`!`) and the logical operators. 
+  In DeMorgan's Law, we apply negation to both conditions and change the logical operator. 
+  In the non-DeMorgan's Law version, whereas it is quite opposite of which is not the changing the conditions.
+
+3. Organizing variables for easy maintenance and clarity:
+
+   A.
+   
+        char Coffee1, Coffee2, Coffee3, Coffeestrength, ServeCoffeewithCream;
+	char BestServedCream1, BestServedCream2, BestServedCream3;
+	int CoffeeBagWeight1, CoffeeBagWeight2, CoffeeBagWeight3, ServingNumber;
+	const double GRAMS_IN_LBS = 453.5924;
+
+   
+   B. Using arrays for better organization:
+   
+   	int  BestServedCream[3];
+   	int  CoffeeBagWeight[3];
+   	char BestServedCream[3];
+   	char Coffee[3];
+   
+
+   the second one uses arrays to group related variables together, making it easier to iterate through them and write more concise code. 
+   It's a more organized approach for handling multiple sets of data.

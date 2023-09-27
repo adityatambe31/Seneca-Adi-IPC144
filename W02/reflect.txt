@@ -1,0 +1,46 @@
+///////////////////////////////////////////////////////////////////////////
+                          	Reflection
+                      	Workshop - #2 (P2)
+Full Name  :Aditya Mahesh Tambe
+Student ID#: 171969223
+Email  	:amtambe@myseneca.ca
+Section	:ZHH
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+
+1.) 
+
+Floating & Double data_types have limited precision because they store numbers in binary format, therefore not all decimal numbers can be represented exactly. So, some cannot be exactly shown in binary & this would lead to tiny errors.
+
+If we need high precision for values like 17.96, it is better to use 'double' date_type than 'float'. In this way,
+it will reduce the small error in code. In the above code, the with 'price1' arises because of the limited precision
+of the data_type, which is resulting in the small errors in the above code. By using double, it will solve the above issue.
+
+2.) 	
+We receive the same outputs for the above mentioned code.
+
+    	a. In the first case, 'money' is divided by '100' which is a 'double' literal. Here, implicit type promotions occur because the ‘money’ variable is an integer type but is getting divided by a double. So the integer is implicitly 	promoted to a ‘double’ to perform the division & results representing the value in dollar amount in decimal form which then is printed with two decimal places using ‘%.2lf’. 
+
+     	b. In the second case, explicitly cast the ‘100’ to a ‘double’, so it is clear that the division is performed with ‘double’ values. This is an example of explicit type casting. The division  is  in between two ‘double’ values 	which are ‘money & 100.0’ resulting in a double value dollar amount in decimal form, which is then printed with two decimals.
+
+     	c. In the third case, we explicitly cast the ‘money’ variable to a double before doing the division. This is an example of explicit casting. It is done in between a ‘double & int’ data_type.
+	This gives us a result in a double value representing the dollar amount in decimal form which is then printed with two decimal places.
+
+
+
+3.) 	a) The value of the variable ‘result’ is determined by ‘money/100’, money & 100 both are integers, where money = 7245 & 100 = 100 respectively, which gives us the result 72.45 which is not an integer. To fix this, the compiler 	would make it 72 and would show us the result 72.
+
+	b) The values that are displayed for the samples 1,2,3,4 are;
+
+	1.‘%.2lf’ shows that we need decimal values, but we need only two numbers after the decimal but we are using one integer and one double, and printf function expects two double inputs which is not the case in the above mentioned 	thus resulting 0 in the output.
+
+	2.‘%d’ shows that we need an integer so it will give us the result 72.
+
+	3.‘%lf’ thus this will also lead us to the 0. This happens because in the above code in the printf function expects value in double but we are providing it one integer and one double, so it is not able to divide it and thus 	resulting 0 in the output. Same applies to the 1 as well. 

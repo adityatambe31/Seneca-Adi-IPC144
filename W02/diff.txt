@@ -1,0 +1,14 @@
+In line number 20 of your output:
+The output should be:
+Taxes    : $ 18.6800
+                 ^
+But your output is: 
+Taxes    : $ 18.6784
+                 ^
+
+Unmatched character details:
+The character in column 18 is supposed to be:
+  [8] ASCII code(56)
+but you printed
+  [7] ASCII code(55)
+
