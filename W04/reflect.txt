@@ -1,0 +1,33 @@
+1. To create the code, specifically for the iteration and selection
+of logic parts;
+
+	- I intdent my code consistently to visually represent the 
+	  nested structure & make it more easier to follow the logic flow.
+	
+	- I use meaningful variables as it helps or convey the purpose of
+	  each variable I use and it makes it more clear to read each part of my code.
+	  
+	- While I create my code I try to write the comments which helps me to seperate
+	  the blocks and each part of code. Like for instance, in this very workshop I 
+	  used comments like different blocks for Pears, Oranges , etc..
+	
+	- I believe to be a consistent coder with following industary leading codinhg 
+	  style, such as specifing naming convention and oraganizing block repeatatively.
+
+
+2. There might have a tons of statements and repeatation. It would make things more tough
+   and challenging to read & understand and update the code if written wrong. Also, it will be
+   hard to spot the errors and would need time to develop it.
+   
+3. Using a series of if optional path which constructs instead of "if/else if".
+   Alternative way of doing is inefficient because:
+   
+   - "if" statements would evaluated for each and every condition, even if one condition is already
+     met, which will lead to unecessary checkpoints.
+
+   - "if/else if" logic will allow us to make it easier as once a condition is fulfilled or met,
+     rest of the condition are not evaluated, thus making it more efficient.
+
+   - This way the code would become more harder to maintain as more condition are added where "if/else if" provides
+     a more organized and scable structure. 
+	 

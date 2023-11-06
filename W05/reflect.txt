@@ -1,0 +1,43 @@
+﻿///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #5
+Full Name  : Aditya Mahesh Tambe
+Student ID#: 171969223
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+
+1. 
+
+   The macros and variables instead of hardcoding “magic” numbers in our code offers several advantages:
+
+
+	1. Readability:  When we use meaningful macro and variable names, it is like 
+ 	Providing our code a clear language. This helps others to easily understand what these values represent without diving into our actual code.
+
+
+	2. Maintainability: Macros and variables act like sticky notes or sticky labels on our values. If we want to change a value, we can do it in one 	place, making updates efficient & reducing the risk of introducing errors.
+
+
+	3.Error Prevention: Hardcoding numbers can lead to mistakes and irregularities. By using the macros and variables ensures we consistently use the 	correct values throughout our code, reducing the chances of bugs.
+
+
+   In our workshop,it will benefit our code easier to get along with, understand and maintain the flow of the code. Thus, it will help in making a more   efficient programming experience.
+
+
+
+2.
+
+  Placing the sum and average logic outside of the validation routine in the workshop is a better design because:
+
+
+	1. Modularity: Separating the average logic and sum logic from the validation routine, helps the code to become more modular. As each part of the 	code would focuses on a particular task. This separation will help in simplification of the code and making it more readable and allowing for the 	reusability for the sum and average calculations in other parts of our program if needed.
+
+
+	2. Simplicity: by keeping the validation routine focused stand alonely on for the testing values with a specific range makes it more appealing and 	easy to read.It also helps to avoid unnecessary complexity within the code and validation process in it. Putting the sum and average logic outside 	of the validation routine ensures us that each part of our code has different purpose which helps us
+	to enhance the our code organization.
